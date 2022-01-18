@@ -1,8 +1,11 @@
+"""
+Script for starting the ASCII Webcam
+"""
 import os
 
 import argparse
 
-from webcam import Webcam, run
+from .webcam import Webcam, run
 
 parser = argparse.ArgumentParser(description='''
     ASCII Console Webcam
