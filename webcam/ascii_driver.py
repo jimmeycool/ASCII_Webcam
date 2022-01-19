@@ -39,13 +39,14 @@ def print_ascii(numbers: Iterable[Iterable[int]], clear: str) -> None:
 
     Args:
         numbers (Iterable[Iterable[int]]): 2D array of numbers to convert
+        clear (str): The clear command for clearing the screen
     """
     os.system(clear)
     sys.stdout.flush()
     sys.stdout.write(_create_ascii(numbers))
 
 
-def run(cam: Webcam, width: int, height: int, clear: str = None):
+def run(cam: Webcam, width: int, height: int, clear: str):
     """
     Runs the ASCII webcam
 
@@ -53,7 +54,7 @@ def run(cam: Webcam, width: int, height: int, clear: str = None):
         cam ([type]): Connection to webcam
         width (int): Width of screen
         height (int): Height of screen
-        clear (str, optional): The clear command for clearing the screen, default to None
+        clear (str): The clear command for clearing the screen
     """
     while True:
         grayscale = cam.grey_frame(width, height)

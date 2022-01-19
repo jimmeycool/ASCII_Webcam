@@ -54,13 +54,13 @@ I;;!;;IlI!<--??/|?]?ttf--?[[[]]}nr-il__vj/\\\\///\\\/\\\\///\\|///_i!i::!:"^^""^
 ```
 
 ## How to run
-First down load all of the decencies:
+First download all of the pacakges:
 
 ``` bash
 pip install -r ./requirements.txt
 ``` 
 
-To run with defaults, just run the following file:
+To run with defaults, just run the following statement without any args:
 
 ``` bash
 python ascii_webcam.py
@@ -69,8 +69,8 @@ python ascii_webcam.py
 More command line options are available through `--help` argument
 
 ## Gotchas
-The performance of this is highly dependent on the shell, what works the best for me is bash, but you milage may vary.
-If you are really seeing issues, use the `--clear` argument to inject a new clear window command (ex. 'clear' for bash).
+The performance of this is highly dependent on the shell, what works the best for me is bash, but your milage may vary.
+If you are seeing issues, use the `--clear` argument to inject a new clear window command (ex. 'clear' for bash).
 
 ## Purpose
-Im trying to gain more experience working with Python and numpy. This mini project will require me to use openCV for access to my webcam stream. Next, numpy will enable me to perform quick matrix calculations in order to increase the framerate.
+Im trying to gain more experience working in Python and numpy. This mini project will require me to use openCV for access to my webcam stream. Next, numpy will enable me to perform quick matrix calculations in order to increase the framerate.
